@@ -1,0 +1,245 @@
+// Barra de navegación <nav>
+nav{
+    .btn{
+        border-radius: 0;
+        background-color: $ballblue;
+        border-color: $ballblue;
+        color:$white
+    }
+    a{
+        color:$raisingblack ;
+    }
+    .nav__sesion{
+        margin-left: auto;
+    }
+}
+// Descripción del servicio <header>
+header{
+    display: grid;
+    background-image: url(../images/bg-hero.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .header__contenedor{
+        margin-left: auto;
+    }
+    p{
+        width: 40%;
+    }
+}
+// Caracteristicas del servicio <main>
+main{
+    text-align: center;
+    p{
+        text-align: left;
+        width: 40%;
+        margin: auto;
+    }
+}
+// Precios del servicio <section>
+section{
+    background-image: url(../images/bg-price.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    h2{
+        color:$white;
+        text-align: center;
+    }
+}
+
+.section__contenedorcard{
+    border-bottom: 1px solid $lavendergray;
+    .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .section__li{
+        visibility: hidden;
+    }
+}
+
+.card{
+    min-width: 311.38px;
+    transition: 0.3s;
+}
+
+.card:hover{
+    box-shadow: 10px 5px 5px $raisingblack;
+}
+// Pie de pagina <footer>
+footer{
+    background-color:$raisingblack;
+    height: 90px;
+    .footer__contenedor{
+        margin-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: flex;
+    }
+    a{
+        color:$white !important;
+        margin: 0;
+    }
+    .footer__enlaces2{
+        margin-left: auto;
+    }
+}
+
+//Media queries
+// Extra small devices (landscape phones, 576px and down)
+@media (max-width: 575px) {
+header{
+    height: 480px;
+    h1{
+        text-align: center;
+    }
+    p{
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+main{
+    p{
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+section{
+    h2{
+        padding-top: 200px;
+    }
+}
+footer{
+    a{
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .footer__contenedor{
+        display: grid;
+        .footer__enlaces1{
+        width: 100%;
+        text-align: center;
+        }
+        .footer__enlaces2{
+        width: 100%;
+        text-align: center;
+    }
+}
+}
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    header{
+        height: 461px;
+    }
+    section{
+        height: 357px;
+        padding-top: 250px;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    header{
+        height: 461px;
+    }
+    section{
+        height: 476px;
+        padding-top: 200px;
+    }
+    main{
+        text-align: center;
+        height: 300px;
+        .main__contenedor{
+            display: flex;
+        }
+        .main__object{
+            margin: auto;
+        }
+        .main__estadisticas{
+            width: 50%;
+            display: grid;
+            margin: auto;
+        }
+        h3{
+            text-align: left;
+        }
+        p{
+            width: 100%;
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    header{
+        height: 596px;
+    }
+    section{
+        height: 615px;
+        padding-top: 150px;
+    }
+    main{
+        text-align: center;
+        height: 300px;
+        .main__contenedor{
+            display: flex;
+        }
+        .main__object{
+            margin: auto;
+        }
+        .main__estadisticas{
+            width: 50%;
+            display: grid;
+            margin: auto;
+        }
+        h3{
+            text-align: left;
+        }
+        p{
+            width: 100%;
+        }
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    header{
+        height: 761px;
+    }
+    section{
+        height: 744px;
+        padding-top: 100px;
+    }
+    main{
+        text-align: center;
+        height: 300px;
+        .main__contenedor{
+            display: flex;
+        }
+        .main__object{
+            margin: auto;
+        }
+        .main__estadisticas{
+            width: 50%;
+            display: grid;
+            margin: auto;
+        }
+        h3{
+            text-align: left;
+        }
+        p{
+            width: 100%;
+        }
+    }
+}
+

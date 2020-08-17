@@ -1,0 +1,19 @@
+section{
+    .btn{
+        border-radius: 0;
+        background-color: $ballblue;
+        border-color: none;
+        color:$white;
+        width: 100%;
+    }
+    .btn:hover {
+        background-color: $middleblue;
+        border-color:none;
+        color:$white;
+      }
+      .btn:focus {
+        background-color: $spanishgray;
+        border-color:none;
+        color:$white;
+      }
+}
