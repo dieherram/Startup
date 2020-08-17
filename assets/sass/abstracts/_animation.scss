@@ -1,0 +1,11 @@
+@keyframes opacidad {
+    0% { opacity: 0; }
+    60% { opacity: .5; }
+    100% { opacity: 1; }
+    }
+
+    main{
+        .object {
+            animation:opacidad 3s ease-in-out 0s infinite;
+            }
+    }

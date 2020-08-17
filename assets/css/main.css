@@ -1,4 +1,19 @@
 @charset "UTF-8";
+@keyframes opacidad {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+main .object {
+  animation: opacidad 3s ease-in-out 0s infinite;
+}
+
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -9933,13 +9948,6 @@ body h1, body h2, body h3 {
 }
 body p, body a {
   font-family: "Open Sans", sans-serif;
-}
-
-main object:hover {
-  filter: opacity(0);
-  transition-duration: 1s;
-  transition-timing-function: ease-in;
-  animation-iteration-count: infinite;
 }
 
 .contenedor {
